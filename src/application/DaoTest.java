@@ -9,6 +9,8 @@ public class DaoTest {
 	public static void main(String[] args) {
 
 		SellerDao sellerDao = DaoFactory.createSellerDao();
+		
+		System.out.println("=== TESTE 1 - SELLER BY ID ===");
 
 		Seller seller = sellerDao.findById(3);
 
