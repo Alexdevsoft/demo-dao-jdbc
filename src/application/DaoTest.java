@@ -41,6 +41,12 @@ public class DaoTest {
 		Seller newSeller = new Seller(null, "Milla", "milla@gmail.com", new Date(), 4000.0, department);
 		sellerDao.insert(newSeller);
 		System.out.println("Insert! New Id = " + newSeller.getId());
+		
+		System.out.println("\n=== TESTE 5 - SELLER BY SELLER UPDATE ===");
+		seller = sellerDao.findById(1);
+		seller.setName("João Silva");
+		sellerDao.update(seller);
+		System.out.println("Atualização completada!");
 
 	}
 
